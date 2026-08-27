@@ -1,0 +1,49 @@
+.admin-container {
+    max-width: 900px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+th {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--accent);
+    font-weight: 700;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.badge.excellent { background: rgba(16, 185, 129, 0.2); color: var(--correct); }
+.badge.good { background: rgba(59, 130, 246, 0.2); color: var(--accent); }
+.badge.fair { background: rgba(245, 158, 11, 0.2); color: #f59e0b; }
+.badge.poor { background: rgba(239, 68, 68, 0.2); color: var(--incorrect); }

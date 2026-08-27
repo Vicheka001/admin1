@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ផ្ទាំងគ្រប់គ្រង Admin (Admin Dashboard)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="app-container admin-container">
+        
+        <!-- Admin Login Screen -->
+        <div id="admin-login-screen" class="screen active">
+            <h1>ចូលគណនី Admin</h1>
+            <p>សូមបញ្ចូលលេខសម្ងាត់ដើម្បីចូលមើលទិន្នន័យ</p>
+            
+            <div class="input-group">
+                <label for="admin-pass">លេខសម្ងាត់៖</label>
+                <input type="password" id="admin-pass" placeholder="វាយលេខសម្ងាត់នៅទីនេះ...">
+            </div>
+            
+            <button id="admin-login-btn" class="primary-btn">ចូលគណនី</button>
+            <br><br>
+            <a href="index.html" style="color: var(--text-secondary); text-decoration: none; font-size: 0.9rem;">&larr; ត្រឡប់ទៅកាន់លំហាត់</a>
+        </div>
+
+        <!-- Admin Dashboard Screen -->
+        <div id="admin-dashboard-screen" class="screen">
+            <h1>ពិន្ទុសិស្សទាំងអស់ (Admin)</h1>
+            <p>កំណត់ចំណាំ៖ ទិន្នន័យនេះត្រូវបានរក្សាទុកក្នុង Local Storage នៃកុំព្យូទ័រនេះប៉ុណ្ណោះ។</p>
+            
+            <div class="table-container">
+                <table id="scores-table">
+                    <thead>
+                        <tr>
+                            <th>ល.រ</th>
+                            <th>ឈ្មោះសិស្ស</th>
+                            <th>ពិន្ទុ</th>
+                            <th>កាលបរិច្ឆេទ</th>
+                            <th>ចំណាត់ថ្នាក់</th>
+                        </tr>
+                    </thead>
+                    <tbody id="scores-body">
+                        <!-- Data injected via JS -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="action-buttons">
+                <button id="clear-data-btn" class="secondary-btn" style="background-color: rgba(239, 68, 68, 0.2); border-color: var(--incorrect); color: var(--incorrect);">លុបទិន្នន័យទាំងអស់</button>
+                <button id="logout-btn" class="secondary-btn">ចាកចេញ</button>
+                <a href="index.html" class="primary-btn" style="text-decoration: none; display: inline-block;">ត្រឡប់ទៅកាន់លំហាត់</a>
+            </div>
+        </div>
+
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
